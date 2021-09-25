@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@200&family=Roboto:wght@100&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+   
+    background: url(./images/background.jpg)  no-repeat fixed center/cover;
+}
+
+
+#container {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    border: 2px solid blue;
+    background: rgb(201, 191, 160);
+    
+    
+}
+
+header{
+    position: fixed;
+    width: 1400px;
+    margin: 0 auto;
+    height: 150px;
+    background: rgb(25, 25, 25);
+    z-index: 3;
+   
+
+}
+
+h1{
+    padding: 15rem 0 5rem 0;
+    text-align: center;
+    font-family: 'Exo 2', sans-serif;
+
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+    border: 2px solid red;
+    
+}
+
+.bd{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;  
+    z-index: -3; 
+   
+}
+
+
+.picture {
+    position: relative;
+    width: 28.125rem;
+    height: 28.125rem;
+    margin-bottom: 2rem;
+    border: 2px solid black;
+    background-color: white;
+    margin: 1rem;
+
+    background-repeat: no-repeat;
+    transition:0.3s;
+    
+}
+
+.picture:hover {
+    transform: rotateY('15deg');
+    
+}
+
+
+#flex {
+    display: flex;
+}
+
+
+/*********************1 ère rangée************************/
+
+#one > section:nth-child(1){
+    background-image: url(./images/1_claire.svg);   
+    background-position: left;
+}
+
+#one > section:nth-child(1) > img { 
+    position: relative;
+    width: 260px;
+    transform: rotate(100deg);
+    top: 9rem;
+    left: 10rem;
+}
+
+/*************/
+#one > section:nth-child(2) {
+    width: 58.125rem;
+    overflow: hidden;   
+}
+
+#one > section:nth-child(2) > img {
+    position: relative;
+    width: 600px;
+    left: 23rem;
+    top: -3rem;   
+}
+
+#one > section:nth-child(2)::before {
+    content: url(./images/2_bulleAxel.svg);
+    position: absolute;
+    width: 550px;
+    top: -3rem;
+    left: -3rem;
+    height: auto;
+    transform: rotate(-25deg);
+
+    
+   
+}
+/*************/
+
+
+/*********************2 ème rangée************************/
+
+/*************/
+#two > section:nth-child(1) {
+    overflow: hidden;
+    width: 58.125rem;
+}
+
+#two > section:nth-child(1)::before {
+    content: url(./images/3_bulleLucas.svg);
+    position: absolute;
+    width: 400px;
+    left: 28rem;
+}
+
+#two > section:nth-child(1) > img {
+    position: relative;
+    top: -5rem;
+    width: 550px
+}
+/*************/
+
+#two > section:nth-child(2) {
+    background-image: url(./images/4_marie.svg);
+    background-position: right;
+        
+}
+
+#two > section:nth-child(2) > img {
+   position: relative;
+   width: 270px;
+   transform: rotate(15deg);
+   top: 16rem;
+   left: -4rem;
+}
+
+
+/*********************3 ème rangée************************/
+
+
+
+#three > section:nth-child(1) {
+    background-image: url(./images/5_maryline.svg);
+    background-position: right;
+  
+}
+
+#three > section:nth-child(2) {
+    background-image: url(./images/6_nicolas.svg);
+    background-position: right;
+    
+}
+
+#three > section:nth-child(3) {
+    background-image: url(./images/7_alvin.svg);
+    background-position: right;
+    
+}
+
+/*********************4 ème rangée************************/
+/*************/
+#four > section:nth-child(1) {
+    overflow: hidden;
+    width: 28.125rem;
+    height: 58.125rem;
+}
+
+#four > section:nth-child(1) > img {
+    position: relative;
+    width: 470px;
+    left: -3rem;  
+    top: -3rem;
+}
+/*************/
+
+#flex > section:nth-child(1) {
+    background-image: url(./images/9_guillaume.svg);
+   
+}
+
+#flex > section:nth-child(2) {
+    background-image: url(./images/10_aurelien.svg);
+   
+
+}
+
+/*************/
+#personnage > section {
+    overflow: hidden;
+    width: 58.125rem;
+    
+    
+}
+
+#personnage > section::before {
+    content: url(./images/11_bulleStephane.svg);
+    position: absolute;
+    width: 500px;
+  
+    
+    
+ 
+    
+}
+
+
+#personnage > section > img {
+    position: relative;
+    width: 450px ;
+    transform: rotate(-14deg);
+    top: -2.5rem;
+    left: 29rem;
+    border: 2px solikd red;
+}
+
+/*************/
+
+
